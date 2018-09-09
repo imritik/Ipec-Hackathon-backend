@@ -8,9 +8,9 @@
         "url": "https://github.com/cornflourblue/node-mongo-registration-login-api.git"
     },
     "scripts": {
-    "start": "node server.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+        "start": "node server.js",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
     "dependencies": {
         "bcryptjs": "^2.4.3",
         "body-parser": "^1.18.3",
@@ -20,7 +20,7 @@
         "jsonwebtoken": "^8.2.2",
         "mongodb": "^3.0.10",
         "mongoose": "^5.1.4",
-        "rootpath": "^0.1.2"
+        "rootpath": "^0.1.2",
+        "socket.io": "^2.1.1"
     }
-    
 }

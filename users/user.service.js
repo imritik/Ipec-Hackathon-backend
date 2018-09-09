@@ -18,6 +18,20 @@ async function authenticate({ username, password }) {
     if (user && bcrypt.compareSync(password, user.hash)) {
         const { hash, ...userWithoutHash } = user.toObject();
         const token = jwt.sign({ sub: user.id }, config.secret);
+
+
+        // function show(req, res) {
+        //     db.displays.findOne({ _id: mongojs.ObjectID(req.params.id) }, function(err, doc) {
+        //         if (err) {
+        //             console.log(err);
+        //             res.send(err);
+        //         } else {
+        //             console.log(doc);
+        //             return res.json(doc);
+
+        //         }
+        //     });
+        // });
         return {
             ...userWithoutHash,
             token
